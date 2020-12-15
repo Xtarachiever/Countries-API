@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: crimson;
+  width: 100%;
+}
+img{
+  max-width: 100%;
+  object-fit: cover;
+}
+.card-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+.App .card-wrapper .cards{
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  background-color: darkcyan;
+}
+.cards .flag{
+  width: 100%;
+}
+.card-wrapper .cards .details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  color: white;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+.App .sorts{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 4rem;
+  margin-top: 2rem;
+}
+.sorts input, .sorts select{
+  outline: none;
+  padding-left: 1.5rem;
+}
+.sorts select{
+  width: 10rem;
+  font-size: 1.2rem;
+}
+::placeholder{
+  font-size: 1.2rem;
+}
